@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Manager",
+    "version": "0.1.1",
+    "action": {
+      "default_icon": {
+        "16": "Icons/Icon16.png",
+        "24": "Icons/Icon24.png",
+        "32": "Icons/Icon32.png"
+      },
+      "default_title": "Manage your tabs easily",
+      "default_popup": "Popup/popup.html"
+    },
+    "description": "With this extension you can manage your tabs within seconds",
+    "icons": {
+      "16": "Icons/Icon16.png",
+      "32": "Icons/Icon32.png",
+      "48": "Icons/Icon48.png",
+      "128": "Icons/Icon128.png"
+    },
+    "author": "LeonTM",
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';",
+      "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
+    },
+    "minimum_chrome_version": "107",
+    "options_page": "Options/options.html",
+    "permissions": [
+      "activeTab",
+      "tabGroups",
+      "tabs",
+      "nativeMessaging"
+    ],
+    "short_name": "Tab Manager",
+    "version_name": "0.1 test-phase v1"
+  }

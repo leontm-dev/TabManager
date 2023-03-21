@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Manager</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <nav class="nav-bar" id="nav-bar">
+        <div class="nav-item" id="nav-item-1">
+            <img class="nav-item-img" src="/Icons/Icon48.png">
+            <div class="nav-item-name">Tab Manager</div>
+        </div>
+        <div class="nav-item" id="nav-item-2" title="Donate">
+            <img class="nav-item-img" src="/Images/Black/Herz-Programm.png">
+        </div>
+    </nav>
+    <div class="main" id="main">
+        <div class="header" id="header-1">Sort by Main URL</div>
+        <label class="switch" id="switch-1">
+            <input type="checkbox" id="checker-1">
+            <span class="slider round"></span>
+        </label>
+        <div class="header" id="header-2">Sort by tab title</div>
+        <label class="switch" id="switch-2">
+            <input type="checkbox" id="checker-2">
+            <span class="slider round"></span>
+        </label>
+        <div class="header" id="header-3">Sort by audio</div>
+        <label class="switch" id="switch-3">
+            <input type="checkbox" id="checker-3">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

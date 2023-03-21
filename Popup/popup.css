@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+body {
+    width: 400px;
+    height: 400px;
+}
+.nav-bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #EB5E28;
+    justify-content: space-around;
+    display: flex;
+    z-index: 100;
+}
+.nav-item {
+    position: relative;
+    height: 50px;
+    min-width: 50px;
+    max-width: 300px;
+}
+.nav-item-img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1/1;
+    margin: 5px;
+    float: left;
+}
+.nav-item-name {
+    position: relative;
+    float: right;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 30px;
+    font-family: "Mulish";
+}
+.nav-item:hover {
+    cursor: pointer;
+}
+.main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #CCC5B9;
+}
+.header {
+    width: 90%;
+    font-size: 40px;
+    font-family: "Mulish";
+    text-align: center;
+}
+#header-1 {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+}
+#header-2 {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+#header-3 {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #403D39;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #EB5E28;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #EB5E28
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+#switch-1 {
+    position: absolute;
+    top: 25%;
+    left: calc(50% - 30px);
+}
+#switch-2 {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 30px);
+}
+#switch-3 {
+    position: absolute;
+    top: 75%;
+    left: calc(50% - 30px);
+}
